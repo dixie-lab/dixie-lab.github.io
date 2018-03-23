@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://dixie-lab.github.io/xmlrpc.php">
+<title>Dixie Lab &#8211; Virtual Reality &amp; Digital Architecture</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dixie Lab &raquo; Feed" href="http://dixie-lab.github.io/feed" />
+<link rel="alternate" type="application/rss+xml" title="Dixie Lab &raquo; Comments Feed" href="http://dixie-lab.github.io/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/dixie-lab.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.9"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='codepeople-loading-page-style-css'  href='http://dixie-lab.github.io/wp-content/plugins/loading-page/css/loading-page.css?ver=free-1.0.19' type='text/css' media='all' />
+<link rel='stylesheet' id='onetone-Yanone-Kaffeesatz-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%7CYanone+Kaffeesatz%7CLustria&#038;ver=4.7.9' type='text/css' media='' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/font-awesome/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='' />
+<link rel='stylesheet' id='bootstrap-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/bootstrap/css/bootstrap.min.css?ver=3.3.4' type='text/css' media='' />
+<link rel='stylesheet' id='owl.carousel-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/owl-carousel/assets/owl.carousel.css?ver=4.7.9' type='text/css' media='' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/prettyPhoto.css?ver=3.1.5' type='text/css' media='' />
+<link rel='stylesheet' id='onetone-shortcodes-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/shortcode.css?ver=2.0.5' type='text/css' media='' />
+<link rel='stylesheet' id='onetone-animate-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/animate.css?ver=3.5.1' type='text/css' media='' />
+<link rel='stylesheet' id='onetone-main-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/style.css?ver=2.0.5' type='text/css' media='all' />
+<style id='onetone-main-inline-css' type='text/css'>
+header .site-name,header .site-description,header .site-tagline{display:none;}.site{}.entry-content a,.home-section-content a{color:#b56ce0;}.fxd-header {
+		background-color: rgba(135,40,189,1);
+		}.main-header {
+		background-color: rgba(0,0,0,1);
+		}.fxd-header{background-color: rgba(135,40,189,1);}
+.fxd-header .site-nav > ul > li > a {font-size:13px;}
+.fxd-header img.site-logo{ margin-right:10px;}
+.fxd-header img.site-logo{ margin-top:10px;}
+.fxd-header img.site-logo{ margin-bottom:10px;}
+.top-bar{background-color:#eeeeee;}.top-bar-info{color:#555555;}.top-bar ul li a{color:#555555;}.site-nav > ul > li > a{padding-top:0px}.site-nav > ul > li > a{padding-bottom:0px}.col-main {background-color:#000000;}.col-aside-left,.col-aside-right {background-color:#000000;}footer .footer-widget-area{background-color:#555555;}footer .footer-info-area{background-color:#000000}footer input,footer textarea{color:#666666;}footer input,footer textarea{border-color:#666666;}.post-inner,.page-inner{padding-top:55px;}.post-inner,.page-inner{padding-bottom:40px;}.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{margin-top:0px;}.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{margin-bottom:20px;}.fxd-header .site-tagline,.fxd-header .site-name{color:#ffffff;}header.overlay .main-header .site-tagline,header.overlay .main-header .site-name{color:#ffffff;}.page-title h1{color:#aa53db;}h1{color:#555555;}h2{color:#555555;}h3{color:#aa53db;}h4{color:#555555;}h5{color:#555555;}h6{color:#555555;}.entry-content,.entry-content p{color:#000000;}.breadcrumb-nav span,.breadcrumb-nav a{color:#ffffff;}.col-aside-left .widget-title,.col-aside-right .widget-title{color:#ffffff;}.footer-widget-area .widget-title{color:#333333;}footer,footer p,footer span,footer div{color:#ffffff;}footer a{color:#b56ce0;}#menu-main > li > a {color:#ffffff;}header.overlay .main-header #menu-main > li > a {color:#ffffff;}#menu-main > li > a:hover{color:#ffffff;}.main-header .sub-menu{background-color:#ffffff;}#menu-main  li li a{color:#3d3d3d;}#menu-main  li li a:hover{color:#222222;}.site-nav  ul li li a{border-color:#000000 !important;}
+	@media screen and (min-width: 920px) {
+	.onetone-dots li a {
+		border: 2px solid #aa53db;
+		}
+	.onetone-dots li.active a,
+	.onetone-dots li.current a,
+	.onetone-dots li a:hover {
+	  background-color: #aa53db;
+	}
+	}@media screen and (max-width: 920px) {
+
+		.site-nav ul{ background-color:#ffffff;}
+
+		#menu-main  li a,header.overlay .main-header #menu-main > li > a {color:#3d3d3d;}
+
+		.site-nav  ul li a{border-color:#000000 !important;}
+
+		}.footer-widget-area{
+
+	                           padding-top:60px;
+
+							   padding-bottom:40px;
+
+							   }.footer-info-area{
+
+	                           padding-top:20px;
+
+							   padding-bottom:20px;
+
+							   }section.home-section-1 .section-title{text-align:center ;}
+section.home-section-1 .section-title{font-size:64px;font-weight:Normal;color:#ffffff;}
+section.home-section-1 .section-title {border-color:#ffffff;}
+section.home-section-1 .section-title-container {font-family:'Lustria,serif';}
+section.home-section-1 .section-subtitle{font-size:18px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-1 .home-section-content p,
+	section.home-section-1 .home-section-content h1,
+	section.home-section-1 .home-section-content h2,
+	section.home-section-1 .home-section-content h3,
+	section.home-section-1 .home-section-content h4,
+	section.home-section-1 .home-section-content h5,
+	section.home-section-1 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-1 .magee-heading{font-size:64px;font-weight:Normal;color:#ffffff;}
+section.home-section-2 .section-title{text-align:center ;}
+section.home-section-2 .section-title{font-size:48px;font-weight:normal;color:#aa53db;}
+section.home-section-2 .section-subtitle{font-size:14px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-2 .home-section-content p,
+	section.home-section-2 .home-section-content h1,
+	section.home-section-2 .home-section-content h2,
+	section.home-section-2 .home-section-content h3,
+	section.home-section-2 .home-section-content h4,
+	section.home-section-2 .home-section-content h5,
+	section.home-section-2 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-3 .section-title{text-align:center ;}
+section.home-section-3 .section-title{font-size:48px;font-weight:normal;color:#aa53db;}
+section.home-section-3 .section-subtitle{font-size:14px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-3 .home-section-content p,
+	section.home-section-3 .home-section-content h1,
+	section.home-section-3 .home-section-content h2,
+	section.home-section-3 .home-section-content h3,
+	section.home-section-3 .home-section-content h4,
+	section.home-section-3 .home-section-content h5,
+	section.home-section-3 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-4 .section-title{text-align:center ;}
+section.home-section-4 .section-title{font-size:48px;font-weight:normal;color:#aa53db;}
+section.home-section-4 .section-subtitle{font-size:14px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-4 .home-section-content p,
+	section.home-section-4 .home-section-content h1,
+	section.home-section-4 .home-section-content h2,
+	section.home-section-4 .home-section-content h3,
+	section.home-section-4 .home-section-content h4,
+	section.home-section-4 .home-section-content h5,
+	section.home-section-4 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-5 .section-title{text-align:center ;}
+section.home-section-5 .section-title{font-size:48px;font-weight:normal;color:#aa53db;}
+section.home-section-5 .section-subtitle{font-size:14px;font-weight:normal;color:#aa53db;}
+
+	section.home-section-5 .home-section-content p,
+	section.home-section-5 .home-section-content h1,
+	section.home-section-5 .home-section-content h2,
+	section.home-section-5 .home-section-content h3,
+	section.home-section-5 .home-section-content h4,
+	section.home-section-5 .home-section-content h5,
+	section.home-section-5 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-6 .section-title{text-align:center ;}
+section.home-section-6 .section-title{font-size:36px;font-weight:bold;color:#666666;}
+section.home-section-6 .section-subtitle{font-size:14px;font-weight:normal;color:#666666;}
+
+	section.home-section-6 .home-section-content p,
+	section.home-section-6 .home-section-content h1,
+	section.home-section-6 .home-section-content h2,
+	section.home-section-6 .home-section-content h3,
+	section.home-section-6 .home-section-content h4,
+	section.home-section-6 .home-section-content h5,
+	section.home-section-6 .home-section-content h6{font-weight:normal;color:#555555;}
+section.home-section-7 .section-title{text-align:center ;}
+section.home-section-7 .section-title{font-size:36px;font-weight:bold;color:#ffffff;}
+section.home-section-7 .section-subtitle{font-size:14px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-7 .home-section-content p,
+	section.home-section-7 .home-section-content h1,
+	section.home-section-7 .home-section-content h2,
+	section.home-section-7 .home-section-content h3,
+	section.home-section-7 .home-section-content h4,
+	section.home-section-7 .home-section-content h5,
+	section.home-section-7 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-8 .section-title{text-align:center ;}
+section.home-section-8 .section-title{font-size:36px;font-weight:bold;color:#666666;}
+section.home-section-8 .section-subtitle{font-size:14px;font-weight:normal;color:#555555;}
+
+	section.home-section-8 .home-section-content p,
+	section.home-section-8 .home-section-content h1,
+	section.home-section-8 .home-section-content h2,
+	section.home-section-8 .home-section-content h3,
+	section.home-section-8 .home-section-content h4,
+	section.home-section-8 .home-section-content h5,
+	section.home-section-8 .home-section-content h6{font-weight:normal;}
+section.home-section-9 .section-title{text-align:center ;}
+section.home-section-9 .section-title{font-size:48px;font-weight:normal;color:#aa53db;}
+section.home-section-9 .section-subtitle{font-size:14px;font-weight:normal;color:#ffffff;}
+
+	section.home-section-9 .home-section-content p,
+	section.home-section-9 .home-section-content h1,
+	section.home-section-9 .home-section-content h2,
+	section.home-section-9 .home-section-content h3,
+	section.home-section-9 .home-section-content h4,
+	section.home-section-9 .home-section-content h5,
+	section.home-section-9 .home-section-content h6{font-weight:normal;color:#ffffff;}
+section.home-section-10 .section-title{text-align:center ;}
+section.home-section-10 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-10 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-10 .home-section-content p,
+	section.home-section-10 .home-section-content h1,
+	section.home-section-10 .home-section-content h2,
+	section.home-section-10 .home-section-content h3,
+	section.home-section-10 .home-section-content h4,
+	section.home-section-10 .home-section-content h5,
+	section.home-section-10 .home-section-content h6{font-weight:normal;}
+section.home-section-11 .section-title{text-align:center ;}
+section.home-section-11 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-11 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-11 .home-section-content p,
+	section.home-section-11 .home-section-content h1,
+	section.home-section-11 .home-section-content h2,
+	section.home-section-11 .home-section-content h3,
+	section.home-section-11 .home-section-content h4,
+	section.home-section-11 .home-section-content h5,
+	section.home-section-11 .home-section-content h6{font-weight:Normal;color:#666666;}
+section.home-section-12 .section-title{text-align:center ;}
+section.home-section-12 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-12 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-12 .home-section-content p,
+	section.home-section-12 .home-section-content h1,
+	section.home-section-12 .home-section-content h2,
+	section.home-section-12 .home-section-content h3,
+	section.home-section-12 .home-section-content h4,
+	section.home-section-12 .home-section-content h5,
+	section.home-section-12 .home-section-content h6{font-weight:Normal;color:#666666;}
+section.home-section-13 .section-title{text-align:center ;}
+section.home-section-13 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-13 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-13 .home-section-content p,
+	section.home-section-13 .home-section-content h1,
+	section.home-section-13 .home-section-content h2,
+	section.home-section-13 .home-section-content h3,
+	section.home-section-13 .home-section-content h4,
+	section.home-section-13 .home-section-content h5,
+	section.home-section-13 .home-section-content h6{font-weight:Normal;color:#666666;}
+section.home-section-14 .section-title{text-align:center ;}
+section.home-section-14 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-14 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-14 .home-section-content p,
+	section.home-section-14 .home-section-content h1,
+	section.home-section-14 .home-section-content h2,
+	section.home-section-14 .home-section-content h3,
+	section.home-section-14 .home-section-content h4,
+	section.home-section-14 .home-section-content h5,
+	section.home-section-14 .home-section-content h6{font-weight:Normal;color:#666666;}
+section.home-section-15 .section-title{text-align:center ;}
+section.home-section-15 .section-title{font-size:36px;font-weight:Normal;color:#666666;}
+section.home-section-15 .section-subtitle{font-size:14px;font-weight:Normal;color:#666666;}
+
+	section.home-section-15 .home-section-content p,
+	section.home-section-15 .home-section-content h1,
+	section.home-section-15 .home-section-content h2,
+	section.home-section-15 .home-section-content h3,
+	section.home-section-15 .home-section-content h4,
+	section.home-section-15 .home-section-content h5,
+	section.home-section-15 .home-section-content h6{font-weight:Normal;color:#666666;}
+section.home-section-1 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-1 .magee-btn-normal.btn-line.btn-light {
+								  color: #ffffff !important;
+								  border-color: #ffffff !important;
+							  }
+							  section.home-section-1 .banner-sns li a i {
+								  color: #ffffff;
+							  }
+section.home-section-1 .home-section-content{text-align:center}
+section.home-section-1 {background-color:#333333;}
+section.home-section-2 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-2 .home-section-content{text-align:left}
+section.home-section-2 {padding:30px 0;
+background-color:#000000;}
+section.home-section-3 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-3 .home-section-content a {
+								  color: #ffffff ;
+							  }
+section.home-section-3 .home-section-content{text-align:center}
+section.home-section-3 {padding:50px 0;
+background-color:#000000;}
+section.home-section-4 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-4 .home-section-content{text-align:center}
+section.home-section-4 {padding:50px 0;
+background-color:#000000;}
+section.home-section-5 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-5 .home-section-content a {
+								  color: #ffffff ;
+							  }
+section.home-section-5 .home-section-content{text-align:center}
+section.home-section-5 {padding:50px 0;
+background-color:#000000;}
+section.home-section-6 .home-section-content{font-size:14px;font-weight:normal;color:#555555;}
+section.home-section-6 .home-section-content a {
+								  color: #555555 ;
+							  }
+section.home-section-6 .home-section-content{text-align:left}
+section.home-section-6 {padding:50px 0;
+background:url(https://demo.mageewp.com/wootest/wp-content/uploads/sites/31/2016/11/Image_02.png)  repeat center center fixed;}
+section.home-section-7 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-7 .home-section-content{text-align:center}
+section.home-section-7 {padding:50px 0 30px;
+background-color:#37cadd;}
+section.home-section-8 .home-section-content{font-size:14px;font-weight:normal;}
+section.home-section-8 .home-section-content{text-align:left}
+section.home-section-8 {padding:50px 0;
+background-color:#ffffff;}
+section.home-section-9 .home-section-content{font-size:14px;font-weight:normal;color:#ffffff;}
+section.home-section-9 .contact-form input,
+section.home-section-9 .contact-form textarea{
+								  color: #ffffff ;
+								  border-color: #ffffff ;
+							  }
+section.home-section-9 .home-section-content{text-align:center}
+section.home-section-9 {padding:50px 0;
+background-color:#000000;}
+section.home-section-10 .home-section-content{font-size:14px;font-weight:normal;}
+section.home-section-10 {}
+section.home-section-11 .home-section-content{font-size:14px;font-weight:Normal;color:#666666;}
+section.home-section-11 {}
+section.home-section-12 .home-section-content{font-size:14px;font-weight:Normal;color:#666666;}
+section.home-section-12 {}
+section.home-section-13 .home-section-content{font-size:14px;font-weight:Normal;color:#666666;}
+section.home-section-13 {}
+section.home-section-14 .home-section-content{font-size:14px;font-weight:Normal;color:#666666;}
+section.home-section-14 {}
+section.home-section-15 .home-section-content{font-size:14px;font-weight:Normal;color:#666666;}
+section.home-section-15 {}
+body{margin:0px;}
+section.home-section-3 .home-section-content h3{color:#aa53db;}
+section.home-section-5 .home-section-content h3{color:#aa53db;}
+section.home-section-9 .home-section-content h3{color:#aa53db;}
+.page-inner{background-color:#000000;}
+.post-inner{background-color:#000000;}
+.page-title-bar{background-color:#aa53db;}
+.page-content{color:#ffffff;}
+.auto-adjust-size{width: 100%; height: 325px;}
+.entry-content p{color:#ffffff;}
+
+.contact-map-overlay{
+background:transparent;
+position:relative;
+width:100%; /* your iframe width */
+height:325px; /* your iframe height */
+top:325px; /* your iframe height */
+margin-top:-325px; /* your iframe height */
+}
+
+.fixed-header .main-header {
+    display: inline;
+}
+</style>
+<link rel='stylesheet' id='onetone-onetone-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/onetone.css?ver=2.0.5' type='text/css' media='' />
+<link rel='stylesheet' id='onetone-ms-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/onetone-ms.css?ver=2.0.5' type='text/css' media='' />
+<link rel='stylesheet/less' id='onetone-scheme'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/scheme.less?ver=2.0.5' type='text/less' media='' />
+<link rel='stylesheet' id='onetone-home-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/css/home.css?ver=2.0.5' type='text/css' media='' />
+<link rel='stylesheet' id='jquery.mb.YTPlayer-css'  href='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/YTPlayer/css/jquery.mb.YTPlayer.min.css?ver=4.7.9' type='text/css' media='1' />
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/plugins/loading-page/loading-screens/bar/loading-bar.js?ver=free-1.0.19'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var loading_page_settings = {"loadingScreen":"1","backgroundColor":"#000000","foregroundColor":"#aa53db","backgroundImage":"http:\/\/dixie-lab.github.io\/wp-content\/uploads\/2017\/03\/DixieLabLogo-01-LoadPage02C3.png","additionalSeconds":"2","pageEffect":"none","backgroundRepeat":"no-repeat","fullscreen":"0","graphic":"bar","text":"1","lp_ls":"0","screen_size":"all","screen_width":"0","deepSearch":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/plugins/loading-page/js/loading-page.js?ver=free-1.0.19'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/bootstrap/js/bootstrap.min.js?ver=3.3.4%20'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.nav.js?ver=1.4.14%20'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.scrollTo.js?ver=1.4.14%20'></script>
+<link rel='https://api.w.org/' href='http://dixie-lab.github.io/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dixie-lab.github.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dixie-lab.github.io/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.9" />
+<!-- <meta name="NextGEN" version="2.2.1" /> -->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #000000; }
+</style>
+<link rel="icon" href="http://dixie-lab.github.io/wp-content/uploads/2017/03/cropped-Logo_Final_01-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://dixie-lab.github.io/wp-content/uploads/2017/03/cropped-Logo_Final_01-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://dixie-lab.github.io/wp-content/uploads/2017/03/cropped-Logo_Final_01-1-180x180.png" />
+<meta name="msapplication-TileImage" content="http://dixie-lab.github.io/wp-content/uploads/2017/03/cropped-Logo_Final_01-1-270x270.png" />
+<style>body{visibility:hidden;}</style></head>
+<body class="home blog custom-background page homepage">
+	<div class="wrapper">
+		<div class="top-wrap">
+                    <!--Header-->
+            <header class="header-wrap logo-left home-header overlay">
+                             
+                <div class="main-header">
+                    <div class="container">
+                        <div class="logo-box">
+                                                
+                            <a href="http://dixie-lab.github.io/">
+                            <img class="site-logo normal_logo" alt="Dixie Lab" src="http://dixie-lab.github.io/wp-content/uploads/2017/03/Header01CC3.png" />
+                            </a>
+                                                                                    <div class="name-box" style=" display:block;">
+                                <a href="http://dixie-lab.github.io/"><h1 class="site-name">Dixie Lab</h1></a>
+                                <span class="site-tagline">Virtual Reality &amp; Digital Architecture</span>
+                            </div>
+                             
+                        </div>
+                        <button class="site-nav-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars fa-2x"></i>
+                        </button>
+                        <nav class="site-nav style3" role="navigation">
+                            <ul id="menu-main" class="main-nav"><li class="onetone-menuitem"><a id="onetone-home" href="#home" >
+							 <span>Home</span></a></li><li class="onetone-menuitem"><a id="onetone-about" href="#about" >
+							 <span>About</span></a></li><li class="onetone-menuitem"><a id="onetone-services" href="#services" >
+							 <span>Services</span></a></li><li class="onetone-menuitem"><a id="onetone-showcase" href="#showcase" >
+							 <span>Showcase</span></a></li><li class="onetone-menuitem"><a id="onetone-team" href="#team" >
+							 <span>Team</span></a></li><li class="onetone-menuitem"><a id="onetone-contact" href="#contact" >
+							 <span>Contact</span></a></li><li id="menu-item-211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-211"><a href="http://dixie-lab.github.io/portfolio"><span>|   Portfolio</span></a></li>
+</ul>                        </nav>
+                    </div>
+                </div>
+                   
+                                    
+                <div class="fxd-header">
+                    <div class="container">
+                        <div class="logo-box">
+                                                    <a href="http://dixie-lab.github.io/"><img class="site-logo normal_logo" src="http://dixie-lab.github.io/wp-content/uploads/2017/03/Header01CC3.png"></a>
+                            
+                                                   
+                                                        <div class="name-box" style=" display:block;">
+                                <a href="http://dixie-lab.github.io/"><h1 class="site-name">Dixie Lab</h1></a>
+                                <span class="site-tagline">Virtual Reality &amp; Digital Architecture</span>
+                            </div>
+                            
+                        </div>
+                        <button class="site-nav-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars fa-2x"></i>
+                        </button>
+                        <nav class="site-nav style3" role="navigation">
+                          <ul id="menu-main" class="main-nav"><li class="onetone-menuitem"><a id="onetone-home" href="#home" >
+							 <span>Home</span></a></li><li class="onetone-menuitem"><a id="onetone-about" href="#about" >
+							 <span>About</span></a></li><li class="onetone-menuitem"><a id="onetone-services" href="#services" >
+							 <span>Services</span></a></li><li class="onetone-menuitem"><a id="onetone-showcase" href="#showcase" >
+							 <span>Showcase</span></a></li><li class="onetone-menuitem"><a id="onetone-team" href="#team" >
+							 <span>Team</span></a></li><li class="onetone-menuitem"><a id="onetone-contact" href="#contact" >
+							 <span>Contact</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-211"><a href="http://dixie-lab.github.io/portfolio"><span>|   Portfolio</span></a></li>
+</ul>                        </nav>
+                    </div>
+                </div>
+
+                          
+            </header>
+                        <div class="slider-wrap"></div>
+        </div><div class="post-wrap">
+  <div class="container-fullwidth">
+    <div class="page-inner row no-aside" style="padding-top: 0; padding-bottom: 0;">
+      <div class="col-main">
+        <section class="post-main" role="main" id="content">
+          <article class="page type-page homepage" role="article">
+            <section id="home" class="section homepage-slider onetone-home"><div id="onetone-owl-slider" class="owl-carousel"><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00009_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00002_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00011_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00006_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00017_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/17311248_197252604095315_6284763170535328964_o.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00006_1920x1017-1.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00002_1920x1017-1.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00005_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div><div class="item"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00008_1920x1017.jpg" alt=""><div class="inner"><div class="caption"><div class="caption-inner"><h2>Virtual Reality &amp; Digital Architecture</h2></div></div></div></div></div></section><section id="about" class="home-section-2">
+    	<div class="home-container container page_container">
+		         
+                       <h1 class="section-title no-subtitle">ABOUT</h1>
+                       <div class="home-section-content" style="color:;"> 
+       <div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no">
+        <div style="color:;">
+ 
+          <div class="magee-promo-box">
+              <div class="promo-info">
+                Dixie was born from the idea that virtual reality could become a fantastic tool for architecture and architects, not only for virtual tours but for the conception at its very core.
+The goal of Dixie Lab is to communicate and work up the use of virtual reality and other digital media in architecture and construction.
+<br>
+<br>
+Dixie started in 2015 as an academic project by Oswald Pfeiffer & Mathieu Venot, and is now a company since 2016.              </div>
+              <div class="promo-action">
+                             </div>
+            </div>
+
+        </div>
+      </div>
+      </div>
+                </div>
+  <div class="clear"></div>
+</section><section id="services" class="home-section-3">
+    	<div class="home-container container page_container">
+		                 
+       <h1 class="section-title no-subtitle">SERVICES</h1>
+                        <div class="home-section-content" style="color:;"> 
+        <div class="row"><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-eye" style="color:#ffffff;"></i></div>
+    <h3>VIRTUAL REALITY</h3>
+    <div class="feature-content">
+      <p>Realistic interactive simulation, project visualization and immersive experience.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-sliders" style="color:#ffffff;"></i></div>
+    <h3>PARAMETRIC DESIGN</h3>
+    <div class="feature-content">
+      <p>3D modeling, data acquisition, environment and architecture integration.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-cogs" style="color:#ffffff;"></i></div>
+    <h3>DIGITAL FABRICATION</h3>
+    <div class="feature-content">
+      <p>Rationalization and post processing, project model manufacturing.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div></div><div class="row"><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-users" style="color:#ffffff;"></i></div>
+    <h3>MULTIDISCIPLINARY TEAM</h3>
+    <div class="feature-content">
+      <p>Engineers, architects, programmers, designers, and teachers.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-university" style="color:#ffffff;"></i></div>
+    <h3>RESEARCH & EDUCATION</h3>
+    <div class="feature-content">
+      <p>Innovative processes, cutting edge technology, workshop and academic teaching.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="zoomIn" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+     <div class="icon-box" data-animation=""><i class="feature-box-icon fa fa-globe" style="color:#ffffff;"></i></div>
+    <h3>WORLDWIDE WORKING</h3>
+    <div class="feature-content">
+      <p>International projects coverage, headquarters and working office in Paris, France.</p>
+      <a href="" target="_blank" class="feature-link"></a></div>
+  </div></div>
+</div></div>        </div>
+                </div>
+  <div class="clear"></div>
+</section><section id="showcase" class="home-section-4">
+    	<div class="home-container container page_container">
+         
+                
+       <h1 class="section-title">SHOWCASE</h1>
+                        <div class="section-subtitle">Samples of our works, full projects on the Portfolio page</div>
+                 <div class="home-section-content" style="color:;"> 
+		 <div class="row no-padding no-margin"><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInLeft" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/17311248_197252604095315_6284763170535328964_o-1.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/17311248_197252604095315_6284763170535328964_o-1.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/Platos-Retreat-IMAGE-6_1600x858-copy.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/Platos-Retreat-IMAGE-6_1600x858-copy.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00002_1920x1017-2.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/HighresScreenshot00002_1920x1017-2.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div></div><div class="row no-padding no-margin"><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInLeft" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/Intensif_numerique_2016_ENSAPM011-Copy.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/Intensif_numerique_2016_ENSAPM011-Copy.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInUp" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/2017-03-17-7.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/2017-03-17-7.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div><div class="col-md-4">
+	<div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no">
+  <div class="magee-feature-box style1" data-os-animation="fadeOut">
+    <div class="img-frames"><div class="img-box figcaption-middle text-center fade-in"><a href="http://dixie-lab.github.io/wp-content/uploads/2017/03/portodom-7_2x.jpg" rel="portfolio-image"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/portodom-7_2x.jpg" alt="" class="feature-img"><div class="img-overlay dark">
+																			<div class="img-overlay-container">
+																				<div class="img-overlay-content">
+																					<i class="fa fa-search"></i>
+																				</div>
+																			</div>
+																		</div></a></div></div>
+</div></div></div></div>        </div>
+                 </div>
+  <div class="clear"></div>
+</section><section id="team" class="home-section-5">
+    	<div class="home-container container page_container">
+		 
+                
+       <h1 class="section-title no-subtitle">TEAM</h1>
+                        <div class="home-section-content" style="color:;"> 
+        <div class="row"><div class="col-md-3">
+	  <div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
+						<div class="magee-person-box" id="">
+						  <div class="person-img-box">
+							<div class="img-box figcaption-middle text-center fade-in"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/041.jpg" alt="" /></div>
+						  </div>
+						  <div class="person-vcard text-center">
+							<h3 class="person-name" style="text-transform: uppercase;">OSWALD PFEIFFER</h3>
+							<h4 class="person-title" style="text-transform: uppercase;">ARCHITECT, M.ARCH</h4>
+							<p class="person-desc">Tutoring Workshop & Studio <br>
+(DMS, AAG, ENSAPM, ESA) <br>
+VR Developer / HAL, EZCT, WAO</p>
+							<ul class="person-social">
+							 <li><a href="https://oswaldpfeiffer.com/"><i class="fa fa-external-link"></i></a></li>
+							</ul>
+						  </div>
+						</div>
+						</div>
+					  </div><div class="col-md-3">
+	  <div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
+						<div class="magee-person-box" id="">
+						  <div class="person-img-box">
+							<div class="img-box figcaption-middle text-center fade-in"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/IMG_2961.jpg" alt="" /></div>
+						  </div>
+						  <div class="person-vcard text-center">
+							<h3 class="person-name" style="text-transform: uppercase;">MATHIEU VENOT</h3>
+							<h4 class="person-title" style="text-transform: uppercase;">ARCHITECT, M.ARCH / M.Sc</h4>
+							<p class="person-desc">Tutoring Workshop & Studio <br>
+(DMS, AAG, ENSAM, ENSAPM) <br>
+Freelancer / LeFabShop, EZCT</p>
+							<ul class="person-social">
+							 <li><a href="http://mathieuvenot.com/"><i class="fa fa-external-link"></i></a></li>
+							</ul>
+						  </div>
+						</div>
+						</div>
+					  </div><div class="col-md-3">
+	  <div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
+						<div class="magee-person-box" id="">
+						  <div class="person-img-box">
+							<div class="img-box figcaption-middle text-center fade-in"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/1c31b86.jpg" alt="" /></div>
+						  </div>
+						  <div class="person-vcard text-center">
+							<h3 class="person-name" style="text-transform: uppercase;">ROMAIN DUBALLET</h3>
+							<h4 class="person-title" style="text-transform: uppercase;">ENGINEER, M.SC.ENG / PH.D</h4>
+							<p class="person-desc">Tutoring Workshop (ENSAPM) <br>
+Co-founder XtreeE / EZCT, Atelier One</p>
+							<ul class="person-social">
+							 
+							</ul>
+						  </div>
+						</div>
+						</div>
+					  </div><div class="col-md-3">
+	  <div class="onetone-animated" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
+						<div class="magee-person-box" id="">
+						  <div class="person-img-box">
+							<div class="img-box figcaption-middle text-center fade-in"><img src="http://dixie-lab.github.io/wp-content/uploads/2017/03/15978532_1541164752579986_980254482_n.jpg" alt="" /></div>
+						  </div>
+						  <div class="person-vcard text-center">
+							<h3 class="person-name" style="text-transform: uppercase;">KAIS SHILI</h3>
+							<h4 class="person-title" style="text-transform: uppercase;">ENGINEER, CNAM</h4>
+							<p class="person-desc">Volunteer (Inceptus, Amatullah) <br>
+Founder Inceptus / Rinaldi Structal</p>
+							<ul class="person-social">
+							 
+							</ul>
+						  </div>
+						</div>
+						</div>
+					  </div></div>    </div>
+
+         </div>
+  <div class="clear"></div>
+</section><section id="contact" class="home-section-9">
+    	<div class="home-container container page_container">
+		                    <div class="section-title">CONTACT</div>
+                    <div class="home-section-content">
+            &nbsp;
+<br>
+
+<div class="contact-map-overlay" onclick="style.pointerEvents='none'"></div>
+<iframe class="auto-adjust-size" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4510.367281020987!2d2.3526033636482553!3d48.869396836682434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e11c5420567%3A0xcfc6ca5bc24c4817!2sDixie+Lab!5e0!3m2!1sen!2sfr!4v1483108584735" frameborder="0" allowfullscreen=""></iframe>
+<br>
+<br>
+<h3>Personal Info</h3>
+<li><i class="fa fa-map-marker" style="visibility: visible;">&nbsp;</i> 96 Rue Rene Boulanger, 75010 Paris, France</li>
+<li><i class="fa fa-envelope-o" style="visibility: visible;">&nbsp;</i> <a target="_blank" href="mailto:contact@dixie-lab.com" style="color: rgb(181, 108, 224)">contact@dixie-lab.com</a></li>
+<br>
+<h3>Social Media</h3>
+<li><i class="fa fa-facebook" style="visibility: visible;">&nbsp;</i> <a href="http://facebook.com/lab.dixie/" style="color: rgb(181, 108, 224)" target=_blank>facebook.com/lab.dixie</a></li>
+<li><i class="fa fa-linkedin" style="visibility: visible;">&nbsp;</i> <a href="http://linkedin.com/company/dixie-lab/" style="color: rgb(181, 108, 224)" target=_blank>linkedin.com/company/dixie-lab</a></li>
+<li><i class="fa fa-github" style="visibility: visible;">&nbsp;</i> <a href="http://github.com/dixie-lab/" style="color: rgb(181, 108, 224)" target=_blank>github.com/dixie-lab</a></li>
+            </div>
+               </div>
+  <div class="clear"></div>
+</section>            <div class="clear"></div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+		<footer>
+        			<div class="footer-info-area">
+				<div class="container">	
+					<div class="site-info pull-left">
+					  Designed by <a href="https://www.mageewp.com/">MageeWP Themes</a>.                          &nbsp;&nbsp;
+                     All content © 2015 - 2017 by Dixie Lab | <a target="_blank" href="http://dixie-lab.github.io/legal-notice/">Legal Notice</a>					</div>
+                     <div class="site-social pull-right">
+                      <ul class=""><li><a target="_blank" rel="" href="https://www.facebook.com/lab.dixie/" data-placement="top" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li><li><a target="_blank" rel="" href="https://www.linkedin.com/company/dixie-lab" data-placement="top" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li><li><a target="_blank" rel="" href="https://www.google.com/maps?cid=14971876506690406423&#038;hl=en&#038;authuser=2&#038;_ga=1.155043313.876796757.1489590900" data-placement="top" data-toggle="tooltip" title="Google Maps"><i class="fa fa-map-marker"></i></a></li><li><a target="_blank" rel="" href="https://github.com/dixie-lab" data-placement="top" data-toggle="tooltip" title="GitHub"><i class="fa fa-github"></i></a></li></ul>                       </div>
+				</div>
+			</div>			
+		</footer>
+	</div>
+    <!-- ngg_resource_manager_marker --><script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/YTPlayer/jquery.mb.YTPlayer.js?ver=4.7.9'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/owl-carousel/owl.carousel.js?ver=4.7.9'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.parallax-1.1.3.js?ver=1.1.3'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/respond.min.js?ver=4.7.9'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/less.min.js?ver=2.7.1'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.prettyPhoto.js?ver=3.1.5'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.counterup.js?ver=1.0'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/plugins/jquery.waypoints.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var onetone_params = {"ajaxurl":"http:\/\/dixie-lab.github.io\/wp-admin\/admin-ajax.php","themeurl":"http:\/\/dixie-lab.github.io\/wp-content\/themes\/onetone","slide_autoplay":"1","slideSpeed":"5555","slider_control":"1","slider_pagination":"","slide_fullheight":"1","sticky_header":"yes","isMobile":"0","primary_color":"#aa53db","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-content/themes/onetone/js/onetone.js?ver=2.0.5'></script>
+<script type='text/javascript' src='http://dixie-lab.github.io/wp-includes/js/wp-embed.min.js?ver=4.7.9'></script>
+<a href="javascript:;">
+        	<div id="back-to-top">
+        		<span class="fa fa-arrow-up"></span>
+            	<span>TOP</span>
+        	</div>
+        </a>	
+</body>
+</html>
